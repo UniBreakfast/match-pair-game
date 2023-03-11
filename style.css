@@ -1,0 +1,29 @@
+form{
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--column-count), 128px);
+    --column-count: 4;
+    gap: 10px;
+}
+li{
+    height: 128px;
+    list-style: none; 
+}
+li:not(.open){
+    background: linear-gradient(45deg, black, transparent) !important;
+}
+.endgame{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h2{
+    font-size: 40px;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+}
